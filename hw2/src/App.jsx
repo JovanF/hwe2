@@ -39,8 +39,7 @@ const App = () => {
         const newIndex = Math.floor(Math.random() * cards.length);
         setShowQuestion(true);
         setCurrentCardIndex(newIndex);
-        console.log(showQuestion);
-        <Flashcard card={card} showQuestion={showQuestion}/>
+
     };
 
     return (
@@ -50,11 +49,9 @@ const App = () => {
             <p>Do you know all these sciences?</p>
           </div>
           <div className = 'card-container'>
-            {currentCardIndex === -1 ? (
-                <CardSet onStart={() => setCurrentCardIndex(0)}/>) 
-                : 
-                (<Flashcard card={card} showQuestion={showQuestion}/>
-            )}
+        
+                <Flashcard key={currentCardIndex} card={card} showQuestion={showQuestion}/>
+
             <br></br>
             </div>
           <button onClick={nextCard}>Next Card</button>

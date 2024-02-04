@@ -50,16 +50,18 @@
 
 
 .card {
+  
   width: 300px;
   margin: 20px;
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #000000;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   cursor: pointer;
   color: black;
   transition: transform 0.3s ease-in-out;
+  
 }
 
 .card:hover {
@@ -68,7 +70,6 @@
 
 .card h2 {
   margin-bottom: 10px;
-
 }
 
 .card p {
@@ -84,10 +85,6 @@
   font-style: bold;
   font-style: italic;
   text-decoration: underline;
-}
-
-.card-set-container {
-  margin-bottom: 20px;
 }
 
 .headings p {

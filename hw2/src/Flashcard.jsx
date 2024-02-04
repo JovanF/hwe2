@@ -1,6 +1,6 @@
-// Flashcard.jsx or App.jsx
+
 import React, { useState } from 'react';
-import './App.css'; // Import your CSS file
+import './App.css';
 
 const Flashcard = ({ card }) => {
     const [showQuestion, setShowQuestion] = useState(true);
